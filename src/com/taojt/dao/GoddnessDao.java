@@ -85,6 +85,7 @@ public class GoddnessDao {
         Goddness g = null;
         while (resultSet.next()) {
             g = new Goddness();
+            g.setId(resultSet.getInt("id"));
             g.setUsername(resultSet.getString("username"));
             g.setAge(resultSet.getInt("age"));
             gs.add(g);
